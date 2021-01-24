@@ -19,7 +19,7 @@ Application adds support for editing JSONField in Django Administration via http
 Install application via pip:
 
 ```bash
-pip install django-admin-json-editor
+pip install https://github.com/jhh3/django-admin-json-editor/archive/v1.1.zip
 ```
 
 Add application to the INSTALLED_APPS settings:
