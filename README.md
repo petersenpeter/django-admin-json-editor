@@ -1,3 +1,10 @@
+A fork of [abogushov/django-admin-json-editor](https://github.com/abogushov/django-admin-json-editor) that:
+- fixes style issues
+-  adds support for the editor in related inline forms.
+
+Initial project is seeing development but seems slow to respond to feature
+requests which is why I've forked and added these changes here.
+
 # Django Administration JSON Editor
 
 [![Build Status](https://travis-ci.org/abogushov/django-admin-json-editor.svg?branch=master)](https://travis-ci.org/abogushov/django-admin-json-editor)
