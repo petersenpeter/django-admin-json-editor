@@ -1,3 +1,2 @@
-<div id="{{ name }}_editor" data-sceditor='{{ sceditor }}' data-schema='{{ schema|safe }}' data-data = '{{ data|safe }}'></div>
-
+<div id="{{ name }}_editor" data-options='{{ editor_options|safe }}' data-data = '{{ data|safe }}'></div>
 <textarea cols="40" id="id_{{ name }}" name="{{ name }}" rows="10" required="" style="display: none">{{ data|safe }}</textarea>
