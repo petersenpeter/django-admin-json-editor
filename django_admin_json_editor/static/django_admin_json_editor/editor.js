@@ -27,7 +27,14 @@ const injectJSONEditor = (element) => {
 
 // Inject editors in the normal detail view and in inlines
 
-const searchAndInject = () => $(document).find("[id$=_editor]").each(() => injectJSONEditor(this));  
+$(document).ready(() => {
+  $(document).find("[id$=_editor]").each(function(){
+    injectJSONEditor(this);      
+  });  
+});
 
-$(document).ready(searchAndInject);
-$(document).on('formset:added', searchAndInject);
+$(document).on('formset:added', (event, $row, formsetName) => {
+  $row.find("[id$=_editor]").each(function(){
+    injectJSONEditor(this);      
+  });  
+});
