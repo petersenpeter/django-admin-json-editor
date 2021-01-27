@@ -1,12 +1,17 @@
 var editors = {};
 var $ = django.jQuery;
 
+const htmlDecode(input) => {
+  var doc = new DOMParser().parseFromString(input, "text/html");
+  return doc.documentElement.textContent;
+}
+
 const injectJSONEditor = (element) => {
   var id = element.id
   if (id.indexOf('__prefix__') === -1) { // activate editor only if it is not an inline template row
-    var textarea_id = "id_"+element.id.replace('_editor', '')
-    var data = JSON.parse(element.getAttribute('data-data'))
-    var options = JSON.parse(element.getAttribute('data-options'))
+    var textarea_id = "id_"+element.id.replace('_editor', '');
+    var data = JSON.parse(htmlDecod(element.getAttribute('data-data')));
+    var options = JSON.parse(element.getAttribute('data-options'));
 
     editors[id] = new JSONEditor(element, options);
     editors[id].on('change', function () {
