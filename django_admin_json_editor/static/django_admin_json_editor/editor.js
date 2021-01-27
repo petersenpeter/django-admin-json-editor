@@ -10,7 +10,7 @@ const injectJSONEditor = (element) => {
   var id = element.id
   if (id.indexOf('__prefix__') === -1) { // activate editor only if it is not an inline template row
     var textarea_id = "id_"+element.id.replace('_editor', '');
-    var data = JSON.parse(htmlDecod(element.getAttribute('data-data')));
+    var data = JSON.parse(htmlDecode(element.getAttribute('data-data')));
     var options = JSON.parse(element.getAttribute('data-options'));
 
     editors[id] = new JSONEditor(element, options);
