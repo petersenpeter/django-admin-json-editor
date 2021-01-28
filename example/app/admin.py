@@ -1,10 +1,10 @@
-from django.contrib import admin
 from django import forms
+from django.contrib import admin
 
 from django_admin_json_editor import JSONEditorWidget
 
-from .models import JSONModel, ArrayJSONModel, Tag
-
+# true
+from .models import ArrayJSONModel, JSONModel, Tag
 
 DATA_SCHEMA = {
     'type': 'object',

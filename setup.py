@@ -3,7 +3,6 @@ import re
 
 from setuptools import setup
 
-
 project_path = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(project_path, "README.md"), "r") as fout:
     README = fout.read()
@@ -36,7 +35,7 @@ test_requirements = [
 
 setup(
     name="django-admin-json-editor",
-    version="1.5",
+    version="1.6",
     packages=["django_admin_json_editor"],
     include_package_data=True,
     license="MIT License",
