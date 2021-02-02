@@ -35,7 +35,7 @@ test_requirements = [
 
 setup(
     name="django-admin-json-editor",
-    version="1.6",
+    version="1.6.2",
     packages=["django_admin_json_editor"],
     include_package_data=True,
     license="MIT License",
