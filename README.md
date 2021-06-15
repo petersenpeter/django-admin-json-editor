@@ -20,6 +20,7 @@ Install application via pip:
 
 ```bash
 pip install https://github.com/jhh3/django-admin-json-editor/archive/v1.3.zip
+pip install https://github.com/petersenpeter/django-admin-json-editor/archive/refs/heads/master.zip
 ```
 
 Add application to the INSTALLED_APPS settings:
